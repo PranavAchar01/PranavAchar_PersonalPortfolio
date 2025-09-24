@@ -68,7 +68,7 @@ const Footer = () => {
               <p className="text-medium-gray text-sm leading-relaxed mb-6 max-w-md">
                 High school senior and passionate web developer with 3+ years of experience 
                 creating modern, responsive websites for businesses and organizations. 
-                Based in San Ramon, California.
+                Based in Dublin, California.
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((link) => {
@@ -111,7 +111,7 @@ const Footer = () => {
               <h3 className="text-pure-white font-semibold mb-4">Get In Touch</h3>
               <div className="space-y-3 text-sm">
                 <p className="text-medium-gray">
-                  San Ramon, California
+                  Dublin, California
                 </p>
                 <a
                   href="mailto:achar.pranav@gmail.com"

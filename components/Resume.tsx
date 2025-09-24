@@ -127,7 +127,7 @@ const Resume = () => {
           <div className="flex flex-wrap justify-center items-center gap-6 text-medium-gray">
             <div className="flex items-center">
               <MapPin size={16} className="mr-2" />
-              <span>San Ramon, CA</span>
+              <span>Dublin, CA</span>
             </div>
             <div className="flex items-center">
               <Mail size={16} className="mr-2" />
