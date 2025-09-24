@@ -176,7 +176,7 @@ This project is open source and available under the [MIT License](LICENSE).
 **Pranav Achar**
 - Email: achar.pranav@gmail.com
 - Phone: (925) 557-6515
-- Location: San Ramon, CA
+- Location: Dublin, CA
 - GitHub: [@PranavAchar01](https://github.com/PranavAchar01)
 - LinkedIn: [pranav-achar](https://linkedin.com/in/pranav-achar)
 
