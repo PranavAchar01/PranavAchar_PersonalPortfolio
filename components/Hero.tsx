@@ -52,7 +52,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg sm:text-xl text-medium-gray max-w-3xl mx-auto leading-relaxed">
-            High school senior with <span className="text-pure-white font-semibold">3+ years</span> of web development experience, 
+            High school senior from Dublin, California, with <span className="text-pure-white font-semibold">3+ years</span> of web development experience, 
             creating modern websites for clubs, businesses, and biotech companies. 
             Passionate about <span className="text-pure-white font-semibold">React</span>, 
             <span className="text-pure-white font-semibold"> Next.js</span>, and building exceptional digital experiences.

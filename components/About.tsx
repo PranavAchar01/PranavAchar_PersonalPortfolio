@@ -74,7 +74,7 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-medium-gray leading-relaxed">
                 <p>
-                  I'm a <span className="text-pure-white font-semibold">high school senior</span> from San Ramon, California, 
+                  I'm a <span className="text-pure-white font-semibold">high school senior</span> from Dublin, California, 
                   with an insatiable passion for technology and web development. What started as curiosity about 
                   how websites work has evolved into <span className="text-pure-white font-semibold">3+ years of professional experience</span> 
                   building digital solutions for real businesses.
@@ -87,7 +87,7 @@ const About = () => {
                 </p>
                 <p>
                   Beyond coding, I'm deeply involved in <span className="text-pure-white font-semibold">competitive sports</span> - 
-                  playing soccer for 4 years and lacrosse for 3 years at the varsity level. These experiences have 
+                  playing club soccer competitively for 4 years and lacrosse at the varsity level for 3 years. These experiences have 
                   taught me invaluable lessons about teamwork, leadership, and perseverance that directly translate 
                   to my approach in software development.
                 </p>
@@ -177,8 +177,8 @@ const About = () => {
                 <h4 className="text-xl font-semibold text-pure-white">Leadership & Activities</h4>
               </div>
               <div className="space-y-2 text-medium-gray">
-                <p>• Varsity Lacrosse Team Captain (3 years)</p>
-                <p>• Competitive Soccer Player (4 years)</p>
+                <p>• Varsity Lacrosse Player (3 years)</p>
+                <p>• Club Soccer Player - Competitive (4 years)</p>
                 <p>• Licensed Soccer Referee</p>
                 <p>• Computer Science Club Member</p>
                 <p>• Business Club Participant</p>
