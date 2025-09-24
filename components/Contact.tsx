@@ -72,7 +72,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Ramon, CA',
+      value: 'Dublin, CA',
       href: '#'
     }
   ]
