@@ -46,16 +46,19 @@ const Hero = () => {
               <span className="animate-pulse">|</span>
             </h1>
             <p className="text-xl sm:text-2xl lg:text-3xl text-medium-gray font-light max-w-4xl mx-auto">
-              Computer Science Student & Web Developer
+              Full-Stack Web Developer & Computer Science Student
+            </p>
+            <p className="text-lg text-medium-gray font-medium">
+              Dublin, CA
             </p>
           </div>
 
           {/* Description */}
           <p className="text-lg sm:text-xl text-medium-gray max-w-3xl mx-auto leading-relaxed">
-            High school senior from Dublin, California, with <span className="text-pure-white font-semibold">3+ years</span> of web development experience, 
-            creating modern websites for clubs, businesses, and biotech companies. 
-            Passionate about <span className="text-pure-white font-semibold">React</span>, 
-            <span className="text-pure-white font-semibold"> Next.js</span>, and building exceptional digital experiences.
+            High school senior with <span className="text-pure-white font-semibold">3+ years</span> of professional web development experience, 
+            specializing in <span className="text-pure-white font-semibold">React</span>, 
+            <span className="text-pure-white font-semibold"> Next.js</span>, and modern JavaScript frameworks. 
+            Proven track record of delivering production-ready applications for businesses and organizations.
           </p>
 
           {/* CTA Buttons */}
