@@ -70,26 +70,29 @@ const About = () => {
           }`}>
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-pure-white mb-4">
-                My Story
+                Technical Capabilities
               </h3>
               <div className="space-y-4 text-medium-gray leading-relaxed">
                 <p>
-                  I'm a <span className="text-pure-white font-semibold">high school senior</span> from Dublin, California, 
-                  with an insatiable passion for technology and web development. What started as curiosity about 
-                  how websites work has evolved into <span className="text-pure-white font-semibold">3+ years of professional experience</span> 
-                  building digital solutions for real businesses.
+                  <span className="text-pure-white font-semibold">Full-Stack Web Developer</span> with expertise in 
+                  modern JavaScript frameworks and libraries. Proficient in <span className="text-pure-white font-semibold">React.js</span>, 
+                  <span className="text-pure-white font-semibold"> Next.js</span>, and <span className="text-pure-white font-semibold">TypeScript</span> 
+                  for building scalable, performance-optimized applications.
                 </p>
                 <p>
-                  Currently maintaining a <span className="text-pure-white font-semibold">4.0 weighted GPA</span> while 
-                  pursuing advanced coursework in Computer Science and Mathematics, I've learned to balance 
-                  academic excellence with practical application. My journey has taken me from building simple 
-                  club websites to developing sophisticated platforms for biotech companies.
+                  <span className="text-pure-white font-semibold">Frontend Specialist:</span> Advanced proficiency in 
+                  HTML5, CSS3, JavaScript ES6+, and modern styling frameworks including TailwindCSS. 
+                  Experience with responsive design, accessibility standards, and cross-browser compatibility.
                 </p>
                 <p>
-                  Beyond coding, I'm deeply involved in <span className="text-pure-white font-semibold">competitive sports</span> - 
-                  playing club soccer competitively for 4 years and lacrosse at the varsity level for 3 years. These experiences have 
-                  taught me invaluable lessons about teamwork, leadership, and perseverance that directly translate 
-                  to my approach in software development.
+                  <span className="text-pure-white font-semibold">CMS & Integration:</span> Skilled in WordPress development, 
+                  Wix customization, and third-party API integrations. Proven ability to deliver client-focused solutions 
+                  with seamless user experiences and optimized performance metrics.
+                </p>
+                <p>
+                  <span className="text-pure-white font-semibold">Project Leadership:</span> Successfully managed and delivered 
+                  <span className="text-pure-white font-semibold"> 10+ production websites</span> for businesses and organizations, 
+                  handling everything from initial planning and development to deployment and maintenance.
                 </p>
               </div>
             </div>
@@ -177,8 +180,8 @@ const About = () => {
                 <h4 className="text-xl font-semibold text-pure-white">Leadership & Activities</h4>
               </div>
               <div className="space-y-2 text-medium-gray">
-                <p>• Varsity Lacrosse Player (3 years)</p>
-                <p>• Club Soccer Player - Competitive (4 years)</p>
+                <p>• Varsity Lacrosse Team Captain (3 years)</p>
+                <p>• Competitive Soccer Player (4 years)</p>
                 <p>• Licensed Soccer Referee</p>
                 <p>• Computer Science Club Member</p>
                 <p>• Business Club Participant</p>
