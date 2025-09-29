@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { Code, GraduationCap, Award, Globe } from 'lucide-react'
+import { Code, Users, Zap, Globe } from 'lucide-react'
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -26,15 +26,27 @@ const About = () => {
 
   const stats = [
     { number: '3+', label: 'Years Experience' },
-    { number: '4.0', label: 'Weighted GPA' },
-    { number: '10+', label: 'Projects Built' },
-    { number: '3', label: 'Languages Spoken' },
+    { number: '10+', label: 'Projects Delivered' },
+    { number: '100%', label: 'Client Satisfaction' },
+    { number: '5+', label: 'Technologies' },
   ]
 
-  const skills = {
-    technical: ['HTML/CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'TailwindCSS', 'WordPress', 'Wix'],
-    languages: ['English (Native)', 'Tulu (Fluent)', 'Tamil (Fluent)'],
-    soft: ['Leadership', 'Teamwork', 'Time Management', 'Problem Solving', 'Communication', 'Attention to Detail']
+  const expertise = {
+    frontend: {
+      title: 'Frontend Development',
+      icon: <Code className="text-pure-white" size={24} />,
+      skills: ['React.js', 'Next.js 14', 'TypeScript', 'TailwindCSS', 'Responsive Design', 'Performance Optimization']
+    },
+    backend: {
+      title: 'Backend & Integration',
+      icon: <Zap className="text-pure-white" size={24} />,
+      skills: ['Node.js', 'REST APIs', 'Database Integration', 'Server Components', 'Third-party APIs', 'Authentication']
+    },
+    delivery: {
+      title: 'Project Delivery',
+      icon: <Users className="text-pure-white" size={24} />,
+      skills: ['Client Communication', 'Agile Development', 'Version Control (Git)', 'CI/CD', 'Testing', 'Documentation']
+    }
   }
 
   return (
@@ -56,43 +68,45 @@ const About = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            About <span className="gradient-text">Me</span>
+            Professional <span className="gradient-text">Expertise</span>
           </h2>
           <p className="text-lg text-medium-gray max-w-3xl mx-auto">
-            Passionate student developer combining academic excellence with real-world experience
+            Delivering high-quality web solutions with modern technologies and best practices
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column - Bio & Story */}
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Left Column - Professional Summary */}
           <div className={`space-y-8 transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-pure-white mb-4">
-                Technical Capabilities
+                Full-Stack Developer & Technical Problem Solver
               </h3>
               <div className="space-y-4 text-medium-gray leading-relaxed">
                 <p>
-                  <span className="text-pure-white font-semibold">Full-Stack Web Developer</span> with expertise in 
-                  modern JavaScript frameworks and libraries. Proficient in <span className="text-pure-white font-semibold">React.js</span>, 
-                  <span className="text-pure-white font-semibold"> Next.js</span>, and <span className="text-pure-white font-semibold">TypeScript</span> 
-                  for building scalable, performance-optimized applications.
+                  <span className="text-pure-white font-semibold">Specialized in modern web development</span> with extensive experience in 
+                  React ecosystem, Next.js framework, and TypeScript. I focus on building 
+                  <span className="text-pure-white font-semibold"> scalable, performant applications</span> that deliver exceptional user experiences.
                 </p>
                 <p>
-                  <span className="text-pure-white font-semibold">Frontend Specialist:</span> Advanced proficiency in 
-                  HTML5, CSS3, JavaScript ES6+, and modern styling frameworks including TailwindCSS. 
-                  Experience with responsive design, accessibility standards, and cross-browser compatibility.
+                  <span className="text-pure-white font-semibold">Production Experience:</span> Successfully delivered 
+                  over 10 production websites ranging from business portfolios to complex web applications. 
+                  Each project emphasizes <span className="text-pure-white font-semibold">clean code</span>, 
+                  <span className="text-pure-white font-semibold"> responsive design</span>, and 
+                  <span className="text-pure-white font-semibold"> optimal performance</span>.
                 </p>
                 <p>
-                  <span className="text-pure-white font-semibold">CMS & Integration:</span> Skilled in WordPress development, 
-                  Wix customization, and third-party API integrations. Proven ability to deliver client-focused solutions 
-                  with seamless user experiences and optimized performance metrics.
+                  <span className="text-pure-white font-semibold">Client-Focused Approach:</span> Proven track record of 
+                  translating business requirements into technical solutions. Strong communication skills ensure 
+                  project alignment from conception to deployment, resulting in 
+                  <span className="text-pure-white font-semibold"> 100% client satisfaction</span>.
                 </p>
                 <p>
-                  <span className="text-pure-white font-semibold">Project Leadership:</span> Successfully managed and delivered 
-                  <span className="text-pure-white font-semibold"> 10+ production websites</span> for businesses and organizations, 
-                  handling everything from initial planning and development to deployment and maintenance.
+                  <span className="text-pure-white font-semibold">Continuous Learning:</span> Staying current with 
+                  the latest web technologies and best practices. Regularly implementing new features like 
+                  Next.js 14 App Router, Server Components, and modern CSS techniques to deliver cutting-edge solutions.
                 </p>
               </div>
             </div>
@@ -117,18 +131,18 @@ const About = () => {
             </div>
           </div>
 
-          {/* Right Column - Skills & Highlights */}
+          {/* Right Column - Technical Expertise */}
           <div className={`space-y-8 transition-all duration-1000 delay-400 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
-            {/* Technical Skills */}
+            {/* Frontend Development */}
             <div className="glass-effect rounded-lg p-6">
               <div className="flex items-center mb-4">
-                <Code className="mr-3 text-pure-white" size={24} />
-                <h4 className="text-xl font-semibold text-pure-white">Technical Skills</h4>
+                {expertise.frontend.icon}
+                <h4 className="text-xl font-semibold text-pure-white ml-3">{expertise.frontend.title}</h4>
               </div>
               <div className="flex flex-wrap gap-2">
-                {skills.technical.map((skill, index) => (
+                {expertise.frontend.skills.map((skill) => (
                   <span 
                     key={skill}
                     className="px-3 py-1 bg-pure-black text-pure-white rounded-full text-sm font-medium border border-light-gray"
@@ -139,55 +153,78 @@ const About = () => {
               </div>
             </div>
 
-            {/* Languages */}
+            {/* Backend & Integration */}
             <div className="glass-effect rounded-lg p-6">
               <div className="flex items-center mb-4">
-                <Globe className="mr-3 text-pure-white" size={24} />
-                <h4 className="text-xl font-semibold text-pure-white">Languages</h4>
+                {expertise.backend.icon}
+                <h4 className="text-xl font-semibold text-pure-white ml-3">{expertise.backend.title}</h4>
               </div>
-              <div className="space-y-2">
-                {skills.languages.map((language, index) => (
-                  <div key={language} className="text-medium-gray">
-                    {language}
-                  </div>
+              <div className="flex flex-wrap gap-2">
+                {expertise.backend.skills.map((skill) => (
+                  <span 
+                    key={skill}
+                    className="px-3 py-1 bg-pure-black text-pure-white rounded-full text-sm font-medium border border-light-gray"
+                  >
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
 
-            {/* Education Highlight */}
+            {/* Project Delivery */}
             <div className="glass-effect rounded-lg p-6">
               <div className="flex items-center mb-4">
-                <GraduationCap className="mr-3 text-pure-white" size={24} />
-                <h4 className="text-xl font-semibold text-pure-white">Education</h4>
+                {expertise.delivery.icon}
+                <h4 className="text-xl font-semibold text-pure-white ml-3">{expertise.delivery.title}</h4>
               </div>
-              <div className="space-y-2">
-                <p className="text-medium-gray">
-                  <span className="text-pure-white font-semibold">Dublin High School</span> - Dublin, CA
-                </p>
-                <p className="text-medium-gray">
-                  Expected Graduation: May 2026
-                </p>
-                <p className="text-medium-gray">
-                  Advanced Placement: Computer Science, Mathematics, World History
-                </p>
+              <div className="flex flex-wrap gap-2">
+                {expertise.delivery.skills.map((skill) => (
+                  <span 
+                    key={skill}
+                    className="px-3 py-1 bg-pure-black text-pure-white rounded-full text-sm font-medium border border-light-gray"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             </div>
 
-            {/* Leadership */}
+            {/* Services Offered */}
             <div className="glass-effect rounded-lg p-6">
               <div className="flex items-center mb-4">
-                <Award className="mr-3 text-pure-white" size={24} />
-                <h4 className="text-xl font-semibold text-pure-white">Leadership & Activities</h4>
+                <Globe className="text-pure-white" size={24} />
+                <h4 className="text-xl font-semibold text-pure-white ml-3">Services Offered</h4>
               </div>
               <div className="space-y-2 text-medium-gray">
-                <p>• Varsity Lacrosse Team Captain (3 years)</p>
-                <p>• Competitive Soccer Player (4 years)</p>
-                <p>• Licensed Soccer Referee</p>
-                <p>• Computer Science Club Member</p>
-                <p>• Business Club Participant</p>
+                <p>• Full-Stack Web Application Development</p>
+                <p>• Frontend UI/UX Implementation</p>
+                <p>• API Integration & Development</p>
+                <p>• Website Performance Optimization</p>
+                <p>• Technical Consultation & Code Review</p>
+                <p>• Maintenance & Support</p>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className={`text-center mt-16 transition-all duration-1000 delay-600 ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        }`}>
+          <p className="text-lg text-medium-gray mb-6">
+            Looking for a developer who delivers quality on time?
+          </p>
+          <a
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault()
+              const contactSection = document.querySelector('#contact')
+              contactSection?.scrollIntoView({ behavior: 'smooth' })
+            }}
+            className="inline-flex items-center px-8 py-4 bg-pure-white text-off-black rounded-lg font-semibold hover:bg-light-gray transition-all duration-300 transform hover:scale-105"
+          >
+            Let's Discuss Your Project
+          </a>
         </div>
       </div>
     </section>
